@@ -1,0 +1,461 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #ffffff;
+    color: #222;
+    line-height: 1.6;
+    min-height: 100vh;
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: #ffffff;
+    color: #fff;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    height: 13vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+header img {
+    width: 80px;
+    height: auto;
+    padding: 2px;
+}
+
+#nav-lista {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    gap: 3.5rem;
+    padding: 0px 10px 0px 100px;
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: #2d3e50;
+    font-weight: 500;
+    font-size: 23px;
+    transition: color 0.2s;
+}
+a:hover {
+    color: #ff0505;
+}
+
+#inicio {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 50px 20px;
+    text-align: center;
+    min-height: 200vh;
+    background: url('image.png') no-repeat center top;
+    background-size: 100% 50%;
+    position: relative;
+    margin-bottom: 100px;
+    scroll-margin-top: 13vh;
+}
+
+#bienvenida {
+    text-align: left;
+    background: rgb(255, 255, 255);
+    margin-right: 60px;
+    margin-top: 170px;
+    padding: 2rem 3rem;
+    max-width: 760px;
+    padding-bottom: 0;
+    padding-right: 0;
+    scroll-margin-top: 13vh;
+}
+#bienvenida h1 {
+    font-size: 60px;
+    margin-bottom: 40px;
+    scroll-margin-top: 20vh;
+    padding-right: 20px;
+    font-family: 'Calibri Light', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    color: #ff5005;
+}
+
+#bienvenida p {
+    font-size: 20px;
+    margin-left: 100px;
+    margin-right: 70px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: lighter;
+}
+
+#informacion {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    width: auto;
+    height: 50px;
+    margin-top:70px;
+    color: #fff;
+}
+
+#vie-boton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #220a0a;
+    text-decoration: none;
+    height: 50px;
+    width: 50px;
+}
+
+#servicios-texto{
+    background-color: #fd5a1f;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px;
+}
+
+#servicios-texto p {
+    margin: 15px;
+}
+
+#btn-servicios
+{
+    color: #fff;
+    font-size: 30px;
+    font-weight: 500;
+    background-color: rgba(1, 1, 0, 0);
+    border: none;
+}
+
+#vie-boton:hover {
+    transition: background-color 0.3s ease;
+    background-color: #5f544b;
+    color: #fff;
+    background-image: none;
+}
+#servicios-main {
+    background: linear-gradient(to bottom, #952e09 44%, #fff 44%) no-repeat center top;
+    background-size: 100% 28%;
+    padding-top: 50px;
+    margin-bottom: 100px;
+}
+#sectores-main {
+    background: linear-gradient(to bottom, #952e09 60%, #fff 44%) no-repeat center top;
+    background-size: 100% 48%;
+    padding-top: 50px;
+}
+
+#servicios-sectores-intro, #sectores-intro {
+    text-align: left;
+    padding-left: 224px;
+    width: 1000px;
+    color: #ffffff;
+    scroll-margin-top: 16vh;
+}
+#servicios-sectores-intro h1, #sectores-intro h1 {
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+#servicios-sectores-intro p, #sectores-intro p {
+    font-size: 20px;
+    padding-bottom:0px;
+}
+#servicios .servicio-sectores,
+#sectores .servicio-sectores {
+    flex: 1 1 0;
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+#servicios,
+#sectores {
+    align-items: stretch;
+}
+#servicios,
+#sectores {
+    display: flex;
+    flex-direction: row;
+    margin-left: 220px;
+    margin-right: 40px;
+    gap: 100px;
+    margin-bottom: 40px;
+}
+
+.servicio-sectores {
+    background-color: #dbdbdb;
+    padding: 40px;
+    margin-top: 30px;
+    box-shadow: 10px 10px 0px rgba(60, 60, 60, 0.347);
+    transition: transform 0.3s;
+    border-left: 6px solid transparent;
+}
+
+.servicio-sectores h2 {
+      color: #fd5a1f;
+      margin-bottom: 15px;
+      font-family: 'Calibri Light', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      font-weight: bold;
+      font-size: 40px;
+
+    }
+.servicio-sectores p {
+      font-size: 20px;
+      line-height: 1.5;
+      color: #333;
+    }
+
+.servicio-sectores a {
+      color: #e5003d;
+      text-decoration: none;
+      font-size: 17px;
+      display: inline-block;
+      margin-top: 10px;
+    }
+
+.servicio-sectores ul {
+      padding-top: 20px;
+      padding-left: 20px;
+      font-size: 14px;
+      color: #333;
+      line-height: 40px;
+      font-size: 20px;
+    }
+
+.servicio-sectores:hover {
+      transform: translateY(-5px);
+      border-left: 6px solid #000000;
+    }
+
+.fade-in {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 0.8s ease, transform 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+#contacto-main {
+      margin: 0;
+      min-height: 100vh;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #000000;
+      color: white;
+      scroll-margin-top: 13vh;
+    }
+
+.form-container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 50px 20px;
+      text-align: center;
+    }
+
+.form-container h2 {
+      margin-bottom: 40px;
+      font-weight: normal;
+      letter-spacing: 1px;
+    }
+
+form {
+      margin: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+.input-group {
+      display: flex;
+      gap: 20px;
+    }
+
+input, textarea {
+      background: none;
+      border: none;
+      border-bottom: 1px solid white;
+      color: white;
+      padding: 10px;
+      width: 100%;
+      font-size: 16px;
+    }
+
+textarea {
+      resize: vertical;
+      min-height: 80px;
+    }
+
+input:focus, textarea:focus {
+      outline: none;
+      border-bottom: 1px solid #aaa;
+    }
+
+#enviar {
+      margin-top: 20px;
+      padding: 12px;
+      background-color: transparent;
+      border: 1px solid white;
+      color: white;
+      cursor: pointer;
+      font-size: 16px;
+      width: 200px;
+      align-self: center;
+      transition: background 0.3s;
+    }
+
+#enviar:hover {
+      background-color: white;
+      color: #000000;
+    }
+
+.footer {
+      margin-top: 40px;
+      font-size: 14px;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      color: #ccc;
+      background-color: #000000;
+    }
+
+#boton-contacto-flotante {
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    z-index: 2000;
+    background: #fd5a1f;
+    color: #fff;
+    padding: 15px 28px;
+    border-radius: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.18);
+    text-decoration: none;
+    transition: background 0.2s, color 0.2s, transform 0.2s;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+#boton-contacto-flotante:hover {
+    background: #ff5005;
+    color: #fff;
+    transform: scale(1.07);
+}
+
+
+@media (max-width: 1200px) {
+    header img {
+        width: 50px;
+    }
+    #inicio {
+        flex-direction: column;
+        padding: 10px 5px;
+        min-height: 100vh; 
+        background-size: cover;
+        background-position: center top;
+        margin-bottom: 30px;
+        max-width: 100vw;
+    }
+    #bienvenida {
+        padding: 18px 14px;
+        margin: 0;
+        max-width: 100%;
+    }
+    #bienvenida h1 {
+        font-size: 36px;
+        margin-bottom: 20px;
+    }
+    #bienvenida p {
+        font-size: 20px;
+    }
+    #servicios-main {
+    background: linear-gradient(to bottom, #952e09 44%, #fff 44%) no-repeat center top;
+    background-size: 100% 15%;
+    }
+    #sectores-main {
+    background: linear-gradient(to bottom, #952e09 44%, #fff 44%) no-repeat center top;
+    background-size: 100% 30%;
+    }
+    #servicios-sectores-intro h1, #sectores-intro h1 {
+        font-size: 34px;
+    }
+    #servicios-sectores-intro p, #sectores-intro p {
+        font-size: 20px;
+    }
+    .servicio-sectores h2 {
+        font-size: 28px;
+    }
+    .servicio-sectores p,
+    .servicio-sectores ul {
+        font-size: 20px;
+    }
+    #nav-lista {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+        padding: 0 5px;
+        justify-content: center;
+    }
+    #servicios-sectores-intro, #sectores-intro {
+        padding-left: 10px;
+        padding-right: 10px;
+        width: 100%;
+    }
+    #servicios, #sectores {
+        flex-direction: column;
+        margin-left: 10px;
+        margin-right: 10px;
+        gap: 18px;
+    }
+    .servicio-sectores {
+        padding: 14px;
+        font-size: 18px;
+    }
+    .servicio-sectores ul {
+        font-size: 18px;
+        line-height: 28px;
+        padding-left: 10px;
+    }
+    .form-container {
+        padding: 24px 8px;
+        max-width: 100%;
+    }
+    .input-group {
+        flex-direction: column;
+        gap: 12px;
+    }
+    #enviar {
+        width: 100%;
+        font-size: 17px;
+    }
+    .footer {
+        flex-direction: column;
+        align-items: center;
+        font-size: 14px;
+        padding: 12px 0;
+    }
+    .social-icons {
+        position: static;
+        flex-direction: row;
+        justify-content: center;
+        margin: 10px 0;
+        transform: none;
+        gap: 10px;
+    }
+}
+    
